@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input::placeholder {
+    @apply ml-9;
+  }
+}
+
+@layer utilities {
+  .custom-placeholder::placeholder {
+    margin-left: 4px !important;
+    padding-left: 10px;
+  }
+}
+
+@layer utilities {
+  .custom-input {
+    padding-left: 5px; /* Padding applies to both placeholder and input text */
+  }
+}
